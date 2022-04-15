@@ -22,3 +22,85 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 24ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 3586)
 
 
+Started GET "/" for 127.0.0.1 at 2022-04-16 03:08:27 +0530
+Started GET "/" for 127.0.0.1 at 2022-04-16 03:08:27 +0530
+  [1m[35m (21.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/aman/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/railties-7.0.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendering /home/aman/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/railties-7.0.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/aman/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/railties-7.0.2.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 439.4ms | Allocations: 618)
+Completed 200 OK in 926ms (Views: 607.9ms | ActiveRecord: 0.0ms | Allocations: 4154)
+
+
+  Rendered /home/aman/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/railties-7.0.2.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 379.4ms | Allocations: 555)
+Completed 200 OK in 1381ms (Views: 1137.4ms | ActiveRecord: 0.0ms | Allocations: 5018)
+
+
+Started GET "/articles/" for 127.0.0.1 at 2022-04-16 03:08:38 +0530
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 148)
+  Rendered layout layouts/application.html.erb (Duration: 3565.1ms | Allocations: 88674)
+Completed 200 OK in 3575ms (Views: 3570.6ms | ActiveRecord: 0.0ms | Allocations: 89724)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-16 03:24:00 +0530
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 26)
+  Rendered layout layouts/application.html.erb (Duration: 102.5ms | Allocations: 13932)
+Completed 200 OK in 109ms (Views: 105.4ms | Allocations: 14568)
+
+
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (12.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (7.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateArticles (20220415220913)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE TABLE "articles" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220415220913"]]
+  [1m[36mTRANSACTION (8.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-04-15 22:10:17.547742"], ["updated_at", "2022-04-15 22:10:17.547742"]]
+  [1m[36mTRANSACTION (8.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddToArticles (20220415221230)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.0ms)[0m  [1m[35mALTER TABLE "articles" ADD "description" text[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220415221230"]]
+  [1m[36mTRANSACTION (6.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mArticle Create (2.1ms)[0m  [1m[32mINSERT INTO "articles" ("title", "created_at", "updated_at", "description") VALUES (?, ?, ?, ?)[0m  [["title", "first article"], ["created_at", "2022-04-15 22:20:36.042518"], ["updated_at", "2022-04-15 22:20:36.042518"], ["description", nil]]
+  [1m[36mTRANSACTION (6.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mArticle Update (1.4ms)[0m  [1m[33mUPDATE "articles" SET "updated_at" = ?, "description" = ? WHERE "articles"."id" = ?[0m  [["updated_at", "2022-04-15 22:23:32.536297"], ["description", "new description"], ["id", 1]]
+  [1m[36mTRANSACTION (5.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mArticle Load (1.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mArticle Create (1.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "created_at", "updated_at", "description") VALUES (?, ?, ?, ?)[0m  [["title", "second article"], ["created_at", "2022-04-15 22:24:34.421980"], ["updated_at", "2022-04-15 22:24:34.421980"], ["description", "eheehehehe"]]
+  [1m[36mTRANSACTION (7.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mArticle Create (1.4ms)[0m  [1m[32mINSERT INTO "articles" ("title", "created_at", "updated_at", "description") VALUES (?, ?, ?, ?)[0m  [["title", "third article"], ["created_at", "2022-04-15 22:25:39.012605"], ["updated_at", "2022-04-15 22:25:39.012605"], ["description", "sensible"]]
+  [1m[36mTRANSACTION (7.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  [1m[36mArticle Load (1.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."title" = ?[0m  [["title", "second article"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mArticle Create (1.5ms)[0m  [1m[32mINSERT INTO "articles" ("title", "created_at", "updated_at", "description") VALUES (?, ?, ?, ?)[0m  [["title", nil], ["created_at", "2022-04-15 22:29:17.937811"], ["updated_at", "2022-04-15 22:29:17.937811"], ["description", nil]]
+  [1m[36mTRANSACTION (8.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
