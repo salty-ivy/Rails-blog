@@ -4,7 +4,6 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    # render plain: params[:article].inspect
     @article = Article.new(article_params)
     if @article.save
       flash[:notice] = "Article created successfully"
@@ -12,6 +11,10 @@ class ArticlesController < ApplicationController
     else
       render :new, status: :unprocessable_entity
     end
+  end
+
+  def show
+    @article = Article.find(params[:id])
   end
 
   private
