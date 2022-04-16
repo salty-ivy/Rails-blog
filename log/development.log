@@ -104,3 +104,1087 @@ Migrating to AddToArticles (20220415221230)
   [1m[36mArticle Create (1.5ms)[0m  [1m[32mINSERT INTO "articles" ("title", "created_at", "updated_at", "description") VALUES (?, ?, ?, ?)[0m  [["title", nil], ["created_at", "2022-04-15 22:29:17.937811"], ["updated_at", "2022-04-15 22:29:17.937811"], ["description", nil]]
   [1m[36mTRANSACTION (8.7ms)[0m  [1m[36mcommit transaction[0m
   [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mArticle Destroy (9.5ms)[0m  [1m[31mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 4]]
+Started GET "/articles/" for 127.0.0.1 at 2022-04-16 11:43:26 +0530
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 22.9ms | Allocations: 334)
+  Rendered layout layouts/application.html.erb (Duration: 630.3ms | Allocations: 34967)
+Completed 200 OK in 808ms (Views: 686.5ms | ActiveRecord: 0.0ms | Allocations: 38195)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-16 11:43:33 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/aman/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/railties-7.0.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/aman/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/railties-7.0.2.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 34.5ms | Allocations: 332)
+Completed 200 OK in 42ms (Views: 37.1ms | ActiveRecord: 0.0ms | Allocations: 1142)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2022-04-16 11:43:56 +0530
+  
+AbstractController::ActionNotFound (The action 'new' could not be found for ArticlesController):
+  
+actionpack (7.0.2.3) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.2.3) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.2.3) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.2.3) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.2.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.2.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.2.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.2.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.2.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.2.3) lib/action_dispatch/routing/route_set.rb:850:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/cookies.rb:693:in `call'
+activerecord (7.0.2.3) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.3) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.2.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/articles/" for 127.0.0.1 at 2022-04-16 11:45:26 +0530
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 146)
+  Rendered layout layouts/application.html.erb (Duration: 66.0ms | Allocations: 14339)
+Completed 200 OK in 73ms (Views: 70.2ms | Allocations: 15115)
+
+
+Started GET "/articles/" for 127.0.0.1 at 2022-04-16 11:45:35 +0530
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for ArticlesController):
+  
+actionpack (7.0.2.3) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.2.3) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.2.3) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.2.3) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.2.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.2.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.2.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.2.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.2.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.2.3) lib/action_dispatch/routing/route_set.rb:850:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/cookies.rb:693:in `call'
+activerecord (7.0.2.3) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.3) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.2.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/articles/new" for 127.0.0.1 at 2022-04-16 11:47:01 +0530
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 144)
+  Rendered layout layouts/application.html.erb (Duration: 60.5ms | Allocations: 14324)
+Completed 200 OK in 68ms (Views: 64.1ms | Allocations: 15287)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2022-04-16 11:48:42 +0530
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 8.1ms | Allocations: 1157)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 1251)
+Completed 500 Internal Server Error in 17ms (Allocations: 2076)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>New Article</h1>
+    2: 
+    3: <%= form_for @article do |f| %>
+    4: <% end %>
+  
+app/views/articles/new.html.erb:3
+Started GET "/articles/new" for 127.0.0.1 at 2022-04-16 11:53:14 +0530
+Processing by ArticlesController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/articles_controller.rb:3:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 141.2ms | Allocations: 2752)
+  Rendered layout layouts/application.html.erb (Duration: 205.3ms | Allocations: 16656)
+Completed 200 OK in 274ms (Views: 208.5ms | ActiveRecord: 2.1ms | Allocations: 22815)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2022-04-16 11:55:26 +0530
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 56.5ms | Allocations: 10416)
+  Rendered layout layouts/application.html.erb (Duration: 71.0ms | Allocations: 12874)
+Completed 200 OK in 78ms (Views: 75.2ms | ActiveRecord: 0.0ms | Allocations: 13775)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 11:55:28 +0530
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for ArticlesController):
+  
+actionpack (7.0.2.3) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.2.3) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.2.3) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.2.3) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.2.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.2.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.2.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.2.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.2.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.2.3) lib/action_dispatch/routing/route_set.rb:850:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/cookies.rb:693:in `call'
+activerecord (7.0.2.3) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.3) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.2.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/articles/new" for 127.0.0.1 at 2022-04-16 11:55:28 +0530
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1033)
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 3188)
+Completed 200 OK in 19ms (Views: 17.1ms | ActiveRecord: 0.0ms | Allocations: 3521)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 11:55:29 +0530
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for ArticlesController):
+  
+actionpack (7.0.2.3) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.2.3) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.2.3) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.2.3) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.2.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.2.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.2.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.2.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.2.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.2.3) lib/action_dispatch/routing/route_set.rb:850:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/cookies.rb:693:in `call'
+activerecord (7.0.2.3) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.3) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.2.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/articles/new" for 127.0.0.1 at 2022-04-16 11:55:29 +0530
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 892)
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 2938)
+Completed 200 OK in 19ms (Views: 17.3ms | ActiveRecord: 0.0ms | Allocations: 3223)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 11:55:33 +0530
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for ArticlesController):
+  
+actionpack (7.0.2.3) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.2.3) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.2.3) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.2.3) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.2.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.2.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.2.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.2.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.2.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.2.3) lib/action_dispatch/routing/route_set.rb:850:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/cookies.rb:693:in `call'
+activerecord (7.0.2.3) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.3) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.2.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/articles/new" for 127.0.0.1 at 2022-04-16 11:55:33 +0530
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 901)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 2955)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.0ms | Allocations: 3240)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 11:55:35 +0530
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for ArticlesController):
+  
+actionpack (7.0.2.3) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.2.3) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.2.3) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.2.3) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.2.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.2.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.2.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.2.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.2.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.2.3) lib/action_dispatch/routing/route_set.rb:850:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/cookies.rb:693:in `call'
+activerecord (7.0.2.3) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.3) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.2.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/articles/new" for 127.0.0.1 at 2022-04-16 11:55:35 +0530
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 883)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 2937)
+Completed 200 OK in 18ms (Views: 16.1ms | ActiveRecord: 0.0ms | Allocations: 3218)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2022-04-16 11:55:55 +0530
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1376)
+  Rendered layout layouts/application.html.erb (Duration: 21.4ms | Allocations: 3791)
+Completed 200 OK in 27ms (Views: 25.1ms | ActiveRecord: 0.0ms | Allocations: 4626)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 11:55:57 +0530
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for ArticlesController):
+  
+actionpack (7.0.2.3) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.2.3) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.2.3) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.2.3) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.2.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.2.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.2.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.2.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.2.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.2.3) lib/action_dispatch/routing/route_set.rb:850:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/cookies.rb:693:in `call'
+activerecord (7.0.2.3) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.3) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.2.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/articles/new" for 127.0.0.1 at 2022-04-16 11:55:57 +0530
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 880)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 2934)
+Completed 200 OK in 20ms (Views: 16.2ms | ActiveRecord: 0.0ms | Allocations: 3242)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 11:56:06 +0530
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for ArticlesController):
+  
+actionpack (7.0.2.3) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.2.3) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.2.3) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.2.3) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.2.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.2.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.2.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.2.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.2.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.2.3) lib/action_dispatch/routing/route_set.rb:850:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/cookies.rb:693:in `call'
+activerecord (7.0.2.3) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.3) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.2.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/articles/new" for 127.0.0.1 at 2022-04-16 11:56:06 +0530
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 901)
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 2955)
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 0.0ms | Allocations: 3236)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 12:00:48 +0530
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"asdads", "description"=>"dasda"}, "commit"=>"Create Article"}
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 8)
+Completed 200 OK in 21ms (Views: 18.5ms | Allocations: 1101)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 12:00:49 +0530
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"asdads", "description"=>"dasda"}, "commit"=>"Create Article"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 4ms (Views: 1.5ms | Allocations: 568)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 12:00:49 +0530
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"asdads", "description"=>"dasda"}, "commit"=>"Create Article"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 4ms (Views: 1.3ms | Allocations: 482)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 12:00:49 +0530
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"asdads", "description"=>"dasda"}, "commit"=>"Create Article"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 4ms (Views: 1.5ms | Allocations: 470)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2022-04-16 12:00:51 +0530
+Processing by ArticlesController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/articles_controller.rb:4:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1155)
+  Rendered layout layouts/application.html.erb (Duration: 65.1ms | Allocations: 14814)
+Completed 200 OK in 80ms (Views: 66.8ms | ActiveRecord: 0.4ms | Allocations: 17709)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 12:00:52 +0530
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"asdads", "description"=>"dasda"}, "commit"=>"Create Article"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 4ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 488)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 12:00:53 +0530
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"asdads", "description"=>"dasda"}, "commit"=>"Create Article"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 4ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 479)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 12:00:53 +0530
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"asdads", "description"=>"dasda"}, "commit"=>"Create Article"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 4ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 479)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 12:00:53 +0530
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"asdads", "description"=>"dasda"}, "commit"=>"Create Article"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 4ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 479)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 12:00:53 +0530
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"asdads", "description"=>"dasda"}, "commit"=>"Create Article"}
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 3)
+Completed 200 OK in 4ms (Views: 1.5ms | ActiveRecord: 0.0ms | Allocations: 467)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 12:00:54 +0530
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"asdads", "description"=>"dasda"}, "commit"=>"Create Article"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 4ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 485)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 12:00:54 +0530
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"asdads", "description"=>"dasda"}, "commit"=>"Create Article"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 4ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 470)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 12:00:54 +0530
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"asdads", "description"=>"dasda"}, "commit"=>"Create Article"}
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 3)
+Completed 200 OK in 5ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 471)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 12:00:54 +0530
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"asdads", "description"=>"dasda"}, "commit"=>"Create Article"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 4ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 476)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-16 12:01:25 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/aman/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/railties-7.0.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/aman/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/railties-7.0.2.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.3ms | Allocations: 322)
+Completed 200 OK in 6ms (Views: 4.1ms | Allocations: 961)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2022-04-16 12:01:31 +0530
+Processing by ArticlesController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/articles_controller.rb:4:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1175)
+  Rendered layout layouts/application.html.erb (Duration: 65.7ms | Allocations: 14866)
+Completed 200 OK in 80ms (Views: 67.8ms | ActiveRecord: 1.7ms | Allocations: 18411)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 12:01:40 +0530
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"new ", "description"=>"new text"}, "commit"=>"Create Article"}
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 3)
+Completed 200 OK in 4ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 523)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 12:01:41 +0530
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"new ", "description"=>"new text"}, "commit"=>"Create Article"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 4ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 494)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 12:01:41 +0530
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"new ", "description"=>"new text"}, "commit"=>"Create Article"}
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 3)
+Completed 200 OK in 4ms (Views: 1.5ms | ActiveRecord: 0.0ms | Allocations: 473)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 12:01:41 +0530
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"new ", "description"=>"new text"}, "commit"=>"Create Article"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 4ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 485)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 12:01:42 +0530
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"new ", "description"=>"new text"}, "commit"=>"Create Article"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 4ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 485)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 12:01:42 +0530
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"new ", "description"=>"new text"}, "commit"=>"Create Article"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 4ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 479)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 12:01:42 +0530
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"new ", "description"=>"new text"}, "commit"=>"Create Article"}
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 3)
+Completed 200 OK in 4ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 470)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 12:01:42 +0530
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"new ", "description"=>"new text"}, "commit"=>"Create Article"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 4ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 482)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2022-04-16 12:05:47 +0530
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 7.9ms | Allocations: 1355)
+  Rendered layout layouts/application.html.erb (Duration: 29.8ms | Allocations: 3778)
+Completed 200 OK in 39ms (Views: 33.5ms | ActiveRecord: 0.0ms | Allocations: 4652)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 12:05:49 +0530
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"new ", "description"=>"new text"}, "commit"=>"Create Article"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 4ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 513)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 12:05:50 +0530
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"new ", "description"=>"new text"}, "commit"=>"Create Article"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.0ms | Allocations: 479)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 12:05:50 +0530
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"new ", "description"=>"new text"}, "commit"=>"Create Article"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 9ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 476)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 12:05:50 +0530
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"new ", "description"=>"new text"}, "commit"=>"Create Article"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 5ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 482)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 12:05:50 +0530
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"new ", "description"=>"new text"}, "commit"=>"Create Article"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 4ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 482)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 12:05:51 +0530
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"new ", "description"=>"new text"}, "commit"=>"Create Article"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 4ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 467)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 12:05:51 +0530
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"new ", "description"=>"new text"}, "commit"=>"Create Article"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 4ms (Views: 1.5ms | ActiveRecord: 0.0ms | Allocations: 485)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 12:05:57 +0530
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"new ", "description"=>"new text"}, "commit"=>"Create Article"}
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 3)
+Completed 200 OK in 6ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 494)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 12:05:58 +0530
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"new ", "description"=>"new text"}, "commit"=>"Create Article"}
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 3)
+Completed 200 OK in 7ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 488)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 12:06:04 +0530
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"new ", "description"=>"new text"}, "commit"=>"Create Article"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 4ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 486)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 12:06:16 +0530
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"new ", "description"=>"new text"}, "commit"=>"Create Article"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 5ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 476)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2022-04-16 12:08:26 +0530
+  
+SyntaxError (/mnt/c/Users/Admin/Documents/rails/blog/app/controllers/articles_controller.rb:9: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/articles_controller.rb:9: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/articles_controller.rb:9: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/articles_controller.rb:9: syntax error, unexpected end-of-input, expecting `end'
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 12:08:33 +0530
+  
+SyntaxError (/mnt/c/Users/Admin/Documents/rails/blog/app/controllers/articles_controller.rb:9: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/articles_controller.rb:9: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/articles_controller.rb:9: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/articles_controller.rb:9: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/articles/new" for 127.0.0.1 at 2022-04-16 12:08:42 +0530
+Processing by ArticlesController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/articles_controller.rb:3:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1161)
+  Rendered layout layouts/application.html.erb (Duration: 72.6ms | Allocations: 14839)
+Completed 200 OK in 87ms (Views: 74.9ms | ActiveRecord: 0.4ms | Allocations: 18018)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 12:08:44 +0530
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"new ", "description"=>"new text"}, "commit"=>"Create Article"}
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 3)
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 509)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 12:08:49 +0530
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"new ", "description"=>"new text"}, "commit"=>"Create Article"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 4ms (Views: 1.5ms | ActiveRecord: 0.0ms | Allocations: 497)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 12:08:50 +0530
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"new ", "description"=>"new text"}, "commit"=>"Create Article"}
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 3)
+Completed 200 OK in 6ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 473)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 12:08:51 +0530
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"new ", "description"=>"new text"}, "commit"=>"Create Article"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 5ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 485)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 12:08:51 +0530
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"new ", "description"=>"new text"}, "commit"=>"Create Article"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 4ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 470)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 12:08:51 +0530
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"new ", "description"=>"new text"}, "commit"=>"Create Article"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 6ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 485)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 12:08:52 +0530
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"new ", "description"=>"new text"}, "commit"=>"Create Article"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 5ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 488)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2022-04-16 12:24:16 +0530
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 28.5ms | Allocations: 3441)
+  Rendered layout layouts/application.html.erb (Duration: 274.7ms | Allocations: 37945)
+Completed 200 OK in 320ms (Views: 284.6ms | ActiveRecord: 1.7ms | Allocations: 45675)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2022-04-16 12:24:21 +0530
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1011)
+  Rendered layout layouts/application.html.erb (Duration: 20.2ms | Allocations: 3154)
+Completed 200 OK in 27ms (Views: 23.6ms | ActiveRecord: 0.0ms | Allocations: 3515)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 12:24:23 +0530
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"new asdasdasdasd", "description"=>"new textsadasdasdsadasdas"}, "commit"=>"Create Article"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:9:in `create'
+  [1m[36mArticle Create (1.8ms)[0m  [1m[32mINSERT INTO "articles" ("title", "created_at", "updated_at", "description") VALUES (?, ?, ?, ?)[0m  [["title", "new asdasdasdasd"], ["created_at", "2022-04-16 06:54:23.393061"], ["updated_at", "2022-04-16 06:54:23.393061"], ["description", "new textsadasdasdsadasdas"]]
+  ↳ app/controllers/articles_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (21.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:9:in `create'
+No template found for ArticlesController#create, rendering head :no_content
+Completed 204 No Content in 45ms (ActiveRecord: 23.0ms | Allocations: 4004)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 12:24:24 +0530
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"new asdasdasdasd", "description"=>"new textsadasdasdsadasdas"}, "commit"=>"Create Article"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:9:in `create'
+  [1m[36mArticle Create (1.4ms)[0m  [1m[32mINSERT INTO "articles" ("title", "created_at", "updated_at", "description") VALUES (?, ?, ?, ?)[0m  [["title", "new asdasdasdasd"], ["created_at", "2022-04-16 06:54:24.787462"], ["updated_at", "2022-04-16 06:54:24.787462"], ["description", "new textsadasdasdsadasdas"]]
+  ↳ app/controllers/articles_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (8.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:9:in `create'
+No template found for ArticlesController#create, rendering head :no_content
+Completed 204 No Content in 22ms (ActiveRecord: 9.9ms | Allocations: 2241)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 12:24:25 +0530
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"new asdasdasdasd", "description"=>"new textsadasdasdsadasdas"}, "commit"=>"Create Article"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:9:in `create'
+  [1m[36mArticle Create (2.0ms)[0m  [1m[32mINSERT INTO "articles" ("title", "created_at", "updated_at", "description") VALUES (?, ?, ?, ?)[0m  [["title", "new asdasdasdasd"], ["created_at", "2022-04-16 06:54:25.075837"], ["updated_at", "2022-04-16 06:54:25.075837"], ["description", "new textsadasdasdsadasdas"]]
+  ↳ app/controllers/articles_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (9.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:9:in `create'
+No template found for ArticlesController#create, rendering head :no_content
+Completed 204 No Content in 26ms (ActiveRecord: 11.4ms | Allocations: 2241)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 12:24:25 +0530
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"new asdasdasdasd", "description"=>"new textsadasdasdsadasdas"}, "commit"=>"Create Article"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:9:in `create'
+  [1m[36mArticle Create (1.4ms)[0m  [1m[32mINSERT INTO "articles" ("title", "created_at", "updated_at", "description") VALUES (?, ?, ?, ?)[0m  [["title", "new asdasdasdasd"], ["created_at", "2022-04-16 06:54:25.286056"], ["updated_at", "2022-04-16 06:54:25.286056"], ["description", "new textsadasdasdsadasdas"]]
+  ↳ app/controllers/articles_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (9.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:9:in `create'
+No template found for ArticlesController#create, rendering head :no_content
+Completed 204 No Content in 25ms (ActiveRecord: 10.9ms | Allocations: 2188)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 12:24:25 +0530
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"new asdasdasdasd", "description"=>"new textsadasdasdsadasdas"}, "commit"=>"Create Article"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:9:in `create'
+  [1m[36mArticle Create (1.4ms)[0m  [1m[32mINSERT INTO "articles" ("title", "created_at", "updated_at", "description") VALUES (?, ?, ?, ?)[0m  [["title", "new asdasdasdasd"], ["created_at", "2022-04-16 06:54:25.474465"], ["updated_at", "2022-04-16 06:54:25.474465"], ["description", "new textsadasdasdsadasdas"]]
+  ↳ app/controllers/articles_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (8.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:9:in `create'
+No template found for ArticlesController#create, rendering head :no_content
+Completed 204 No Content in 22ms (ActiveRecord: 9.5ms | Allocations: 2223)
+
+
+Started POST "/articles" for 127.0.0.1 at 2022-04-16 12:24:25 +0530
+Processing by ArticlesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"new asdasdasdasd", "description"=>"new textsadasdasdsadasdas"}, "commit"=>"Create Article"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:9:in `create'
+  [1m[36mArticle Create (1.6ms)[0m  [1m[32mINSERT INTO "articles" ("title", "created_at", "updated_at", "description") VALUES (?, ?, ?, ?)[0m  [["title", "new asdasdasdasd"], ["created_at", "2022-04-16 06:54:25.682102"], ["updated_at", "2022-04-16 06:54:25.682102"], ["description", "new textsadasdasdsadasdas"]]
+  ↳ app/controllers/articles_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (7.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:9:in `create'
+No template found for ArticlesController#create, rendering head :no_content
+Completed 204 No Content in 26ms (ActiveRecord: 9.5ms | Allocations: 2244)
+
+
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
