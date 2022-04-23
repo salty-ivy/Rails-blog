@@ -1,16 +1,28 @@
-<%= form_with model: @article do |f| %>
-    <p>
-        <%= f.label :title %><br>
-        <%= f.text_field :title %>
-    </p>
+<div class="row">
+    <div class="col-xs-12">
+        <%= form_for(@article, :html => {class: "row g-3", role: "form"}) do |f| %>
+            <div class="form-group">
+                <div class="control-label col-sm-2">
+                    <%= f.label :title, class:"form-label" %>
+                </div>
+                <div class="col-sm-8">
+                    <%= f.text_field :title, class: "form-control", id: "exampleInputEmail1" %>
+                </div>
+            </div>
 
-    <p>
-        <%= f.label :description %><br>
-        <%= f.text_area :description %>
-    </p>
+            <div class="form-group">
+                <div class="control-label col-sm-2">
+                    <%= f.label :description, class: "form-label" %><br>
+                </div>
+                <div class="col-sm-8">
+                    <%= f.text_area :description, class: "form-control" %>
+                </div>
+            </div>
 
-    <p>
-        <%= f.submit %>
-    </p>
+            <p>
+                <%= f.submit class: "btn btn-primary" %>
+            </p>
 
-<% end %>
+        <% end %>
+    </div>
+</div>
