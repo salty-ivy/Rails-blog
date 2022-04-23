@@ -7369,3 +7369,49 @@ Processing by ArticlesController#new as HTML
 Completed 200 OK in 40ms (Views: 37.8ms | Allocations: 7136)
 
 
+Started GET "/" for 127.0.0.1 at 2022-04-23 19:01:37 +0530
+  [1m[35m (9.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#main as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/main.html.erb within layouts/application
+  Rendered home/main.html.erb within layouts/application (Duration: 3306.3ms | Allocations: 39113)
+  Rendered layouts/_navbar.html.erb (Duration: 3.4ms | Allocations: 866)
+  Rendered layouts/_messages.html.erb (Duration: 0.7ms | Allocations: 173)
+  Rendered layout layouts/application.html.erb (Duration: 3449.3ms | Allocations: 56903)
+Completed 200 OK in 3532ms (Views: 3475.7ms | ActiveRecord: 0.0ms | Allocations: 59784)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-23 19:01:41 +0530
+Processing by HomeController#main as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/main.html.erb within layouts/application
+  Rendered home/main.html.erb within layouts/application (Duration: 7.7ms | Allocations: 788)
+  Rendered layouts/_navbar.html.erb (Duration: 2.3ms | Allocations: 504)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered layout layouts/application.html.erb (Duration: 32.9ms | Allocations: 5193)
+Completed 200 OK in 36ms (Views: 34.6ms | ActiveRecord: 0.0ms | Allocations: 5498)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-23 19:01:44 +0530
+Processing by HomeController#main as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/main.html.erb within layouts/application
+  Rendered home/main.html.erb within layouts/application (Duration: 7.2ms | Allocations: 788)
+  Rendered layouts/_navbar.html.erb (Duration: 3.6ms | Allocations: 504)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered layout layouts/application.html.erb (Duration: 32.0ms | Allocations: 5193)
+Completed 200 OK in 35ms (Views: 33.5ms | ActiveRecord: 0.0ms | Allocations: 5473)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-23 19:01:47 +0530
+Processing by HomeController#main as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/main.html.erb within layouts/application
+  Rendered home/main.html.erb within layouts/application (Duration: 10.2ms | Allocations: 789)
+  Rendered layouts/_navbar.html.erb (Duration: 3.8ms | Allocations: 504)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered layout layouts/application.html.erb (Duration: 56.0ms | Allocations: 5183)
+Completed 200 OK in 64ms (Views: 60.6ms | ActiveRecord: 0.0ms | Allocations: 5457)
+
+

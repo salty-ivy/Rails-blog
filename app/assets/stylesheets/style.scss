@@ -1,0 +1,43 @@
+#logo{
+    float: left;
+    font-size: 1.5em;
+    color: rgb(209, 43, 43);
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: bold;
+    transition-property: all;
+    transition-duration:100ms;
+}
+#logo:hover {
+    /* color:rgb(56, 3, 3); */
+    text-decoration:none;
+    transform:scale(1.2);
+    -webkit-transform:scale(1.2);
+    -moz-transform:scale(1.2);
+    -ms-transform:scale(1.2);
+    -o-transform:scale(1.2);
+}
+
+#jumbotron{
+    text-align: center;
+    background: #dcdcdc;
+    box-shadow: 10px 7px 7px red;
+    color: black;
+    margin: 20px;
+    border:1px solid #dcdcdc;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+    padding: 50px;
+    padding-left:10px;
+    padding-left:10px;
+
+    transition-property: all;
+    transition-duration:100ms;
+}
+
+/* #jumbotron:hover{
+    box-shadow: 10px 7px 7px red;
+} */
