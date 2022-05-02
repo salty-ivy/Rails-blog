@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   # get "/articles", to: "articles#index"
   root "home#main"
   get "/about", to: "home#about"
+  get "/signup", to: "users#new"
+  post "/users", to: "users#create"
   resources :articles
 
 

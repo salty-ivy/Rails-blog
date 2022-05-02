@@ -1,0 +1,50 @@
+<h1>Signup</h1>
+
+<% if @user.errors.any? %>
+    <ul>
+        <% @user.errors.full_messages.each do |message| %>
+            <li> <%= message %></li>
+        <%end%>
+    </ul>
+<% end %>
+<div class="row">
+    <div class="align-items-center justify-content-center">
+        <%= form_for(@user, :html => {class: "row g-3", role: "form"}) do |f| %>
+            <div class="form-group">
+                <div class="control-label col-sm-2">
+                    <%= f.label :username, class:"form-label" %>
+                </div>
+                <div class="col-sm-8">
+                    <%= f.text_field :username, class: "form-control", id: "exampleInputEmail1", placeholder: "username" %>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="control-label col-sm-2">
+                    <%= f.label :email, class: "form-label" %><br>
+                </div>
+                <div class="col-sm-8">
+                    <%= f.email_field :email, class: "form-control", placeholder: "email" %>
+                </div>
+            </div>
+
+             <div class="form-group">
+                <div class="control-label col-sm-2">
+                    <%= f.label :password, class: "form-label" %><br>
+                </div>
+                <div class="col-sm-8">
+                    <%= f.password_field :password, class: "form-control", placeholder: "password" %>
+                </div>
+            </div>
+
+            <p>
+                <%= f.submit class: "btn btn-primary" %>
+            </p>
+
+        <% end %>
+    </div>
+</div>
+<%= link_to "Back to listing", articles_path %>
+<% content_for :javascript_includes do %>
+  <%= javascript_include_tag "test.js" %>
+<% end %>
