@@ -5,7 +5,8 @@ Rails.application.routes.draw do
   root "home#main"
   get "/about", to: "home#about"
   get "/signup", to: "users#new"
-  post "/users", to: "users#create"
+  # post "/users", to: "users#create"
+  resources :users, except: [:new]
   resources :articles
 
 

@@ -7795,3 +7795,1653 @@ Processing by UsersController#new as HTML
 Completed 200 OK in 75ms (Views: 70.8ms | ActiveRecord: 0.0ms | Allocations: 9528)
 
 
+Started GET "/signup" for 127.0.0.1 at 2022-05-02 16:58:25 +0530
+  [1m[35m (3.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 162.6ms | Allocations: 28243)
+  Rendered layouts/_navbar.html.erb (Duration: 5.8ms | Allocations: 996)
+  Rendered layouts/_messages.html.erb (Duration: 1.3ms | Allocations: 174)
+  Rendered layout layouts/application.html.erb (Duration: 262.5ms | Allocations: 45740)
+Completed 200 OK in 328ms (Views: 274.6ms | ActiveRecord: 3.0ms | Allocations: 54327)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-05-02 16:58:28 +0530
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"", "email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+Completed 400 Bad Request in 5ms (ActiveRecord: 0.0ms | Allocations: 594)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: article):
+  
+app/controllers/users_controller.rb:15:in `user_params'
+app/controllers/users_controller.rb:7:in `create'
+Started GET "/signup" for 127.0.0.1 at 2022-05-02 16:58:28 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 18.0ms | Allocations: 2981)
+  Rendered layouts/_navbar.html.erb (Duration: 7.9ms | Allocations: 693)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 33)
+  Rendered layout layouts/application.html.erb (Duration: 58.7ms | Allocations: 7313)
+Completed 200 OK in 62ms (Views: 60.2ms | ActiveRecord: 0.0ms | Allocations: 7651)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-05-02 16:58:30 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"", "email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.0ms | Allocations: 435)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: article):
+  
+app/controllers/users_controller.rb:15:in `user_params'
+app/controllers/users_controller.rb:7:in `create'
+Started GET "/signup" for 127.0.0.1 at 2022-05-02 16:58:51 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 17.3ms | Allocations: 2749)
+  Rendered layouts/_navbar.html.erb (Duration: 3.6ms | Allocations: 693)
+  Rendered layouts/_messages.html.erb (Duration: 0.2ms | Allocations: 27)
+  Rendered layout layouts/application.html.erb (Duration: 48.4ms | Allocations: 7066)
+Completed 200 OK in 53ms (Views: 50.6ms | ActiveRecord: 0.0ms | Allocations: 7363)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-05-02 16:58:53 +0530
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"", "email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.0ms | Allocations: 388)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: article):
+  
+app/controllers/users_controller.rb:15:in `user_params'
+app/controllers/users_controller.rb:7:in `create'
+Started GET "/signup" for 127.0.0.1 at 2022-05-02 16:58:54 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 21.3ms | Allocations: 2725)
+  Rendered layouts/_navbar.html.erb (Duration: 8.6ms | Allocations: 693)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered layout layouts/application.html.erb (Duration: 58.8ms | Allocations: 7041)
+Completed 200 OK in 62ms (Views: 60.2ms | ActiveRecord: 0.0ms | Allocations: 7332)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-05-02 16:58:55 +0530
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"", "email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+Completed 400 Bad Request in 6ms (ActiveRecord: 0.0ms | Allocations: 402)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: article):
+  
+app/controllers/users_controller.rb:15:in `user_params'
+app/controllers/users_controller.rb:7:in `create'
+Started GET "/signup" for 127.0.0.1 at 2022-05-02 16:58:55 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 17.6ms | Allocations: 2740)
+  Rendered layouts/_navbar.html.erb (Duration: 8.6ms | Allocations: 693)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered layout layouts/application.html.erb (Duration: 60.4ms | Allocations: 7055)
+Completed 200 OK in 64ms (Views: 61.9ms | ActiveRecord: 0.0ms | Allocations: 7341)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-05-02 16:58:56 +0530
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"", "email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+Completed 400 Bad Request in 7ms (ActiveRecord: 0.0ms | Allocations: 393)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: article):
+  
+app/controllers/users_controller.rb:15:in `user_params'
+app/controllers/users_controller.rb:7:in `create'
+Started GET "/signup" for 127.0.0.1 at 2022-05-02 16:58:56 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 18.3ms | Allocations: 2730)
+  Rendered layouts/_navbar.html.erb (Duration: 7.7ms | Allocations: 693)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered layout layouts/application.html.erb (Duration: 51.8ms | Allocations: 7046)
+Completed 200 OK in 55ms (Views: 53.1ms | ActiveRecord: 0.0ms | Allocations: 7332)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-05-02 16:59:01 +0530
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"das", "email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.0ms | Allocations: 400)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: article):
+  
+app/controllers/users_controller.rb:15:in `user_params'
+app/controllers/users_controller.rb:7:in `create'
+Started GET "/signup" for 127.0.0.1 at 2022-05-02 16:59:02 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 17.5ms | Allocations: 2737)
+  Rendered layouts/_navbar.html.erb (Duration: 5.3ms | Allocations: 693)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered layout layouts/application.html.erb (Duration: 54.9ms | Allocations: 7053)
+Completed 200 OK in 62ms (Views: 58.0ms | ActiveRecord: 0.0ms | Allocations: 7343)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-05-02 16:59:03 +0530
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"das", "email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.0ms | Allocations: 396)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: article):
+  
+app/controllers/users_controller.rb:15:in `user_params'
+app/controllers/users_controller.rb:7:in `create'
+Started GET "/signup" for 127.0.0.1 at 2022-05-02 16:59:03 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 20.2ms | Allocations: 2734)
+  Rendered layouts/_navbar.html.erb (Duration: 3.5ms | Allocations: 693)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered layout layouts/application.html.erb (Duration: 53.6ms | Allocations: 7049)
+Completed 200 OK in 58ms (Views: 55.4ms | ActiveRecord: 0.0ms | Allocations: 7336)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-05-02 17:00:09 +0530
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"", "email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+Completed 400 Bad Request in 9ms (Allocations: 1810)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: article):
+  
+app/controllers/users_controller.rb:17:in `user_params'
+app/controllers/users_controller.rb:7:in `create'
+Started GET "/signup" for 127.0.0.1 at 2022-05-02 17:00:10 +0530
+Processing by UsersController#new as HTML
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:3:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 22.3ms | Allocations: 3158)
+  Rendered layouts/_navbar.html.erb (Duration: 3.2ms | Allocations: 708)
+  Rendered layouts/_messages.html.erb (Duration: 0.3ms | Allocations: 36)
+  Rendered layout layouts/application.html.erb (Duration: 126.6ms | Allocations: 19632)
+Completed 200 OK in 146ms (Views: 129.3ms | ActiveRecord: 3.1ms | Allocations: 22648)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-05-02 17:00:26 +0530
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"asdasd", "email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.0ms | Allocations: 426)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: article):
+  
+app/controllers/users_controller.rb:17:in `user_params'
+app/controllers/users_controller.rb:7:in `create'
+Started GET "/signup" for 127.0.0.1 at 2022-05-02 17:00:26 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 18.5ms | Allocations: 2734)
+  Rendered layouts/_navbar.html.erb (Duration: 4.8ms | Allocations: 693)
+  Rendered layouts/_messages.html.erb (Duration: 0.2ms | Allocations: 27)
+  Rendered layout layouts/application.html.erb (Duration: 56.7ms | Allocations: 7049)
+Completed 200 OK in 62ms (Views: 60.0ms | ActiveRecord: 0.0ms | Allocations: 7357)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-05-02 17:01:08 +0530
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"asdasd", "email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+Completed 400 Bad Request in 10ms (Allocations: 1825)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: article):
+  
+app/controllers/users_controller.rb:17:in `user_params'
+app/controllers/users_controller.rb:7:in `create'
+Started GET "/signup" for 127.0.0.1 at 2022-05-02 17:01:09 +0530
+Processing by UsersController#new as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:3:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 17.7ms | Allocations: 3173)
+  Rendered layouts/_navbar.html.erb (Duration: 3.2ms | Allocations: 709)
+  Rendered layouts/_messages.html.erb (Duration: 0.2ms | Allocations: 36)
+  Rendered layout layouts/application.html.erb (Duration: 127.8ms | Allocations: 19684)
+Completed 200 OK in 145ms (Views: 130.2ms | ActiveRecord: 2.9ms | Allocations: 22677)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/signup" for 127.0.0.1 at 2022-05-02 17:03:12 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 632)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 727)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms | Allocations: 1570)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Signup</h1>
+
+<% if @user.errors.any? %>
+    <ul>
+        <% @user.errors.full_messages.each do |message| %>
+            <li> <%= message %></li>
+        <%end%>
+    </ul>
+<% end %>
+<div class="row">
+    <div class="align-items-center justify-content-center">
+        <%= form_for(@user, :html => {class: "row g-3", role: "form"}) do |f| %>
+            <div class="form-group">
+                <div class="control-label col-sm-2">
+                    <%= f.label :username, class:"form-label" %>
+                </div>
+                <div class="col-sm-8">
+                    <%= f.text_field :username, class: "form-control", id: "exampleInputEmail1", placeholder: "username" %>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="control-label col-sm-2">
+                    <%= f.label :email, class: "form-label" %><br>
+                </div>
+                <div class="col-sm-8">
+                    <%= f.email_field :email, class: "form-control", placeholder: "email" %>
+                </div>
+            </div>
+
+             <div class="form-group">
+                <div class="control-label col-sm-2">
+                    <%= f.label :password, class: "form-label" %><br>
+                </div>
+                <div class="col-sm-8">
+                    <%= f.password_field :password, class: "form-control", placeholder: "password" %>
+                </div>
+            </div>
+
+            <p>
+                <%= f.submit "signup" class: "btn btn-primary" %>
+            </p>
+
+        <% end %>
+    </div>
+</div>
+<%= link_to "Back to listing", articles_path %>
+<% content_for :javascript_includes do %>
+  <%= javascript_include_tag "test.js" %>
+<% end %>
+):
+1:    <h1>Signup</h1>
+2:    
+3:    <% if @user.errors.any? %>
+4:        <ul>
+5:            <% @user.errors.full_messages.each do |message| %>
+6:                <li> <%= message %></li>
+7:            <%end%>
+8:        </ul>
+9:    <% end %>
+10:    <div class="row">
+11:        <div class="align-items-center justify-content-center">
+12:            <%= form_for(@user, :html => {class: "row g-3", role: "form"}) do |f| %>
+13:                <div class="form-group">
+14:                    <div class="control-label col-sm-2">
+15:                        <%= f.label :username, class:"form-label" %>
+16:                    </div>
+17:                    <div class="col-sm-8">
+18:                        <%= f.text_field :username, class: "form-control", id: "exampleInputEmail1", placeholder: "username" %>
+19:                    </div>
+20:                </div>
+21:    
+22:                <div class="form-group">
+23:                    <div class="control-label col-sm-2">
+24:                        <%= f.label :email, class: "form-label" %><br>
+25:                    </div>
+26:                    <div class="col-sm-8">
+27:                        <%= f.email_field :email, class: "form-control", placeholder: "email" %>
+28:                    </div>
+29:                </div>
+30:    
+31:                 <div class="form-group">
+32:                    <div class="control-label col-sm-2">
+33:                        <%= f.label :password, class: "form-label" %><br>
+34:                    </div>
+35:                    <div class="col-sm-8">
+36:                        <%= f.password_field :password, class: "form-control", placeholder: "password" %>
+37:                    </div>
+38:                </div>
+39:    
+40:                <p>
+41:                    <%= f.submit "signup" class: "btn btn-primary" %>
+42:                </p>
+43:    
+44:            <% end %>
+45:        </div>
+46:    </div>
+47:    <%= link_to "Back to listing", articles_path %>
+48:    <% content_for :javascript_includes do %>
+49:      <%= javascript_include_tag "test.js" %>
+50:    <% end %>
+  
+app/views/users/new.html.erb:41: syntax error, unexpected `class', expecting ')'
+app/views/users/new.html.erb:41: syntax error, unexpected `class', expecting ')'
+app/views/users/new.html.erb:41: syntax error, unexpected `class', expecting ')'
+app/views/users/new.html.erb:41: syntax error, unexpected `class', expecting ')'
+Started GET "/signup" for 127.0.0.1 at 2022-05-02 17:03:27 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 16.8ms | Allocations: 3504)
+  Rendered layouts/_navbar.html.erb (Duration: 4.5ms | Allocations: 957)
+  Rendered layouts/_messages.html.erb (Duration: 0.7ms | Allocations: 154)
+  Rendered layout layouts/application.html.erb (Duration: 47.9ms | Allocations: 8619)
+Completed 200 OK in 55ms (Views: 51.2ms | ActiveRecord: 0.0ms | Allocations: 9462)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-05-02 17:04:29 +0530
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"pandey", "email"=>"pandey@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"signup"}
+Completed 500 Internal Server Error in 9ms (Allocations: 3299)
+
+
+  
+NameError (undefined local variable or method `debugger' for #<UsersController:0x0000000001adb0>
+
+        debugger
+        ^^^^^^^^):
+  
+app/controllers/users_controller.rb:7:in `create'
+Started GET "/signup" for 127.0.0.1 at 2022-05-02 17:07:30 +0530
+Processing by UsersController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:3:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 20.3ms | Allocations: 3053)
+  Rendered layouts/_navbar.html.erb (Duration: 4.0ms | Allocations: 708)
+  Rendered layouts/_messages.html.erb (Duration: 0.9ms | Allocations: 36)
+  Rendered layout layouts/application.html.erb (Duration: 96.7ms | Allocations: 19527)
+Completed 200 OK in 115ms (Views: 98.7ms | ActiveRecord: 2.7ms | Allocations: 23858)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-05-02 17:07:37 +0530
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"pandey", "email"=>"pandey@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"signup"}
+Completed 400 Bad Request in 10ms (ActiveRecord: 0.0ms | Allocations: 471)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: article):
+  
+app/controllers/users_controller.rb:18:in `user_params'
+app/controllers/users_controller.rb:7:in `create'
+Started GET "/signup" for 127.0.0.1 at 2022-05-02 17:07:37 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 17.2ms | Allocations: 2646)
+  Rendered layouts/_navbar.html.erb (Duration: 4.3ms | Allocations: 693)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered layout layouts/application.html.erb (Duration: 46.4ms | Allocations: 6961)
+Completed 200 OK in 50ms (Views: 48.0ms | ActiveRecord: 0.0ms | Allocations: 7269)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-05-02 17:08:16 +0530
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"pandey", "email"=>"pandey@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"signup"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "pandey"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "pandey@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Create (4.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["username", "pandey"], ["email", "pandey@gmail.com"], ["created_at", "2022-05-02 11:38:17.846282"], ["updated_at", "2022-05-02 11:38:17.846282"], ["password_digest", "[FILTERED]"]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (11.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+Completed 500 Internal Server Error in 354ms (ActiveRecord: 18.1ms | Allocations: 12251)
+
+
+  
+NameError (undefined local variable or method `flas' for #<UsersController:0x00000000024018>
+
+            flas[:notice] = "User created successfully"
+            ^^^^
+Did you mean?  flash):
+  
+app/controllers/users_controller.rb:9:in `create'
+Started GET "/signup" for 127.0.0.1 at 2022-05-02 17:08:29 +0530
+Processing by UsersController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:3:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 14.3ms | Allocations: 3050)
+  Rendered layouts/_navbar.html.erb (Duration: 3.4ms | Allocations: 708)
+  Rendered layouts/_messages.html.erb (Duration: 0.2ms | Allocations: 36)
+  Rendered layout layouts/application.html.erb (Duration: 89.0ms | Allocations: 19525)
+Completed 200 OK in 107ms (Views: 91.1ms | ActiveRecord: 2.4ms | Allocations: 23848)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-05-02 17:08:44 +0530
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"testUser", "email"=>"test@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"signup"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "testUser"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["username", "testUser"], ["email", "test@gmail.com"], ["created_at", "2022-05-02 11:38:44.670602"], ["updated_at", "2022-05-02 11:38:44.670602"], ["password_digest", "[FILTERED]"]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (7.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+Redirected to http://127.0.0.1:3000/articles
+Completed 302 Found in 335ms (ActiveRecord: 9.5ms | Allocations: 4652)
+
+
+Started GET "/articles" for 127.0.0.1 at 2022-05-02 17:08:44 +0530
+Processing by ArticlesController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:16
+  Rendered articles/index.html.erb within layouts/application (Duration: 10.6ms | Allocations: 3827)
+  Rendered layouts/_navbar.html.erb (Duration: 3.5ms | Allocations: 704)
+  Rendered layouts/_messages.html.erb (Duration: 0.2ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 38.6ms | Allocations: 8933)
+Completed 200 OK in 52ms (Views: 39.4ms | ActiveRecord: 1.9ms | Allocations: 10885)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/signup" for 127.0.0.1 at 2022-05-02 17:09:24 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 13.0ms | Allocations: 2689)
+  Rendered layouts/_navbar.html.erb (Duration: 5.1ms | Allocations: 690)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered layout layouts/application.html.erb (Duration: 35.7ms | Allocations: 6975)
+Completed 200 OK in 40ms (Views: 37.4ms | ActiveRecord: 0.0ms | Allocations: 7287)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-05-02 17:09:27 +0530
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"", "email"=>"", "password"=>"[FILTERED]"}, "commit"=>"signup"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 21.9ms | Allocations: 7247)
+  Rendered layouts/_navbar.html.erb (Duration: 3.6ms | Allocations: 693)
+  Rendered layouts/_messages.html.erb (Duration: 0.2ms | Allocations: 27)
+  Rendered layout layouts/application.html.erb (Duration: 58.8ms | Allocations: 11572)
+Completed 422 Unprocessable Entity in 77ms (Views: 60.8ms | ActiveRecord: 0.8ms | Allocations: 15081)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-05-02 17:09:43 +0530
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"user1", "email"=>"user@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"signup"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "user1"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "user@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 15.1ms | Allocations: 3348)
+  Rendered layouts/_navbar.html.erb (Duration: 3.8ms | Allocations: 690)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered layout layouts/application.html.erb (Duration: 44.2ms | Allocations: 7637)
+Completed 422 Unprocessable Entity in 63ms (Views: 45.9ms | ActiveRecord: 1.0ms | Allocations: 10955)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-05-02 17:10:01 +0530
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"user1", "email"=>"user@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"signup"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "user1"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "user@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 12.8ms | Allocations: 3727)
+  Rendered layouts/_navbar.html.erb (Duration: 4.4ms | Allocations: 708)
+  Rendered layouts/_messages.html.erb (Duration: 0.2ms | Allocations: 36)
+  Rendered layout layouts/application.html.erb (Duration: 83.3ms | Allocations: 20201)
+Completed 200 OK in 111ms (Views: 85.7ms | ActiveRecord: 2.6ms | Allocations: 28137)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-05-02 17:10:03 +0530
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"user1", "email"=>"user@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"signup"}
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "user1"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "user@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 14.9ms | Allocations: 3334)
+  Rendered layouts/_navbar.html.erb (Duration: 5.2ms | Allocations: 694)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered layout layouts/application.html.erb (Duration: 47.7ms | Allocations: 7656)
+Completed 200 OK in 65ms (Views: 49.2ms | ActiveRecord: 1.9ms | Allocations: 11220)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-05-02 17:10:42 +0530
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"us", "email"=>"user@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"signup"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "us"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "user@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 16.2ms | Allocations: 3374)
+  Rendered layouts/_navbar.html.erb (Duration: 3.8ms | Allocations: 690)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered layout layouts/application.html.erb (Duration: 41.9ms | Allocations: 7667)
+Completed 200 OK in 365ms (Views: 43.7ms | ActiveRecord: 0.8ms | Allocations: 11030)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-05-02 17:10:45 +0530
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"us", "email"=>"user@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"signup"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "us"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "user@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 14.1ms | Allocations: 3362)
+  Rendered layouts/_navbar.html.erb (Duration: 4.7ms | Allocations: 690)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered layout layouts/application.html.erb (Duration: 38.0ms | Allocations: 7651)
+Completed 200 OK in 358ms (Views: 39.5ms | ActiveRecord: 0.8ms | Allocations: 10992)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-05-02 17:10:46 +0530
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"us", "email"=>"user@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"signup"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "us"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "user@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 12.7ms | Allocations: 3359)
+  Rendered layouts/_navbar.html.erb (Duration: 3.2ms | Allocations: 690)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered layout layouts/application.html.erb (Duration: 37.2ms | Allocations: 7648)
+Completed 200 OK in 356ms (Views: 38.7ms | ActiveRecord: 0.8ms | Allocations: 10986)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-05-02 17:10:47 +0530
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"us", "email"=>"user@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"signup"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "us"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "user@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 15.2ms | Allocations: 3381)
+  Rendered layouts/_navbar.html.erb (Duration: 4.0ms | Allocations: 690)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered layout layouts/application.html.erb (Duration: 38.5ms | Allocations: 7681)
+Completed 200 OK in 362ms (Views: 40.2ms | ActiveRecord: 0.9ms | Allocations: 11028)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-05-02 17:10:54 +0530
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"us", "email"=>"user@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"signup"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "us"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "user@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 14.6ms | Allocations: 3755)
+  Rendered layouts/_navbar.html.erb (Duration: 4.2ms | Allocations: 708)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 36)
+  Rendered layout layouts/application.html.erb (Duration: 85.4ms | Allocations: 20234)
+Completed 422 Unprocessable Entity in 405ms (Views: 87.7ms | ActiveRecord: 2.8ms | Allocations: 28226)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-05-02 17:11:05 +0530
+Processing by UsersController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:3:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 49.3ms | Allocations: 3048)
+  Rendered layouts/_navbar.html.erb (Duration: 4.9ms | Allocations: 709)
+  Rendered layouts/_messages.html.erb (Duration: 0.3ms | Allocations: 36)
+  Rendered layout layouts/application.html.erb (Duration: 152.2ms | Allocations: 19553)
+Completed 200 OK in 181ms (Views: 160.3ms | ActiveRecord: 2.1ms | Allocations: 23807)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-05-02 17:11:14 +0530
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"use", "email"=>"user@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"signup"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "use"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "user@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 14.1ms | Allocations: 3401)
+  Rendered layouts/_navbar.html.erb (Duration: 3.5ms | Allocations: 690)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered layout layouts/application.html.erb (Duration: 37.0ms | Allocations: 7708)
+Completed 200 OK in 353ms (Views: 38.7ms | ActiveRecord: 0.8ms | Allocations: 11641)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-05-02 17:11:17 +0530
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"use", "email"=>"user@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"signup"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "use"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "user@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 11.2ms | Allocations: 3359)
+  Rendered layouts/_navbar.html.erb (Duration: 3.2ms | Allocations: 693)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered layout layouts/application.html.erb (Duration: 36.1ms | Allocations: 7658)
+Completed 200 OK in 355ms (Views: 37.8ms | ActiveRecord: 1.0ms | Allocations: 11009)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-05-02 17:11:25 +0530
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"use", "email"=>"user@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"signup"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "use"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "user@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 13.0ms | Allocations: 3736)
+  Rendered layouts/_navbar.html.erb (Duration: 3.4ms | Allocations: 705)
+  Rendered layouts/_messages.html.erb (Duration: 0.2ms | Allocations: 36)
+  Rendered layout layouts/application.html.erb (Duration: 83.1ms | Allocations: 20180)
+Completed 422 Unprocessable Entity in 404ms (Views: 86.2ms | ActiveRecord: 3.0ms | Allocations: 28166)
+
+
+Started GET "/user/1/edit" for 127.0.0.1 at 2022-05-02 17:18:50 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/user/1/edit"):
+  
+Started GET "/users/1/edit" for 127.0.0.1 at 2022-05-02 17:19:09 +0530
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:17:in `edit'
+Completed 404 Not Found in 16ms (ActiveRecord: 0.5ms | Allocations: 2357)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/users_controller.rb:17:in `edit'
+Started GET "/" for 127.0.0.1 at 2022-05-02 17:35:46 +0530
+Processing by HomeController#main as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/main.html.erb within layouts/application
+  Rendered home/main.html.erb within layouts/application (Duration: 13.5ms | Allocations: 1112)
+  Rendered layouts/_navbar.html.erb (Duration: 3.3ms | Allocations: 552)
+  Rendered layouts/_messages.html.erb (Duration: 0.2ms | Allocations: 36)
+  Rendered layout layouts/application.html.erb (Duration: 164.3ms | Allocations: 17777)
+Completed 200 OK in 171ms (Views: 168.3ms | Allocations: 18525)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2022-05-02 17:35:50 +0530
+Processing by ArticlesController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/articles_controller.rb:9:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 9.5ms | Allocations: 1611)
+  Rendered articles/new.html.erb within layouts/application (Duration: 30.3ms | Allocations: 3889)
+  Rendered layouts/_navbar.html.erb (Duration: 7.5ms | Allocations: 701)
+  Rendered layouts/_messages.html.erb (Duration: 0.2ms | Allocations: 36)
+  Rendered layout layouts/application.html.erb (Duration: 61.9ms | Allocations: 8256)
+Completed 200 OK in 84ms (Views: 64.2ms | ActiveRecord: 2.1ms | Allocations: 12330)
+
+
+Started GET "/" for ::1 at 2022-05-03 11:47:50 +0530
+  [1m[35m (14.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#main as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/main.html.erb within layouts/application
+  Rendered home/main.html.erb within layouts/application (Duration: 490.5ms | Allocations: 23269)
+  Rendered layouts/_navbar.html.erb (Duration: 29.4ms | Allocations: 866)
+  Rendered layouts/_messages.html.erb (Duration: 9.2ms | Allocations: 174)
+  Rendered layout layouts/application.html.erb (Duration: 725.2ms | Allocations: 40980)
+Completed 200 OK in 886ms (Views: 771.5ms | ActiveRecord: 0.0ms | Allocations: 43859)
+
+
+Started GET "/" for 127.0.0.1 at 2022-05-03 11:48:01 +0530
+Processing by HomeController#main as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/main.html.erb within layouts/application
+  Rendered home/main.html.erb within layouts/application (Duration: 12.7ms | Allocations: 789)
+  Rendered layouts/_navbar.html.erb (Duration: 2.3ms | Allocations: 504)
+  Rendered layouts/_messages.html.erb (Duration: 0.2ms | Allocations: 27)
+  Rendered layout layouts/application.html.erb (Duration: 54.6ms | Allocations: 5192)
+Completed 200 OK in 67ms (Views: 58.4ms | ActiveRecord: 0.0ms | Allocations: 5503)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-05-03 11:48:09 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 206.9ms | Allocations: 5202)
+  Rendered layouts/_navbar.html.erb (Duration: 3.5ms | Allocations: 704)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 36)
+  Rendered layout layouts/application.html.erb (Duration: 236.9ms | Allocations: 9588)
+Completed 200 OK in 325ms (Views: 241.7ms | ActiveRecord: 2.5ms | Allocations: 16126)
+
+
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/users/1" for 127.0.0.1 at 2022-05-03 11:49:14 +0530
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for UsersController):
+  
+actionpack (7.0.2.3) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.2.3) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.2.3) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.2.3) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.2.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.2.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.2.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.2.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.2.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.2.3) lib/action_dispatch/routing/route_set.rb:850:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/cookies.rb:693:in `call'
+activerecord (7.0.2.3) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.3) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.2.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/users/1/edit" for 127.0.0.1 at 2022-05-03 11:49:27 +0530
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `edit'
+Completed 406 Not Acceptable in 27ms (ActiveRecord: 0.6ms | Allocations: 1871)
+
+
+  
+ActionController::MissingExactTemplate (UsersController#edit is missing a template for request formats: text/html):
+  
+actionpack (7.0.2.3) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (7.0.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (7.0.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (7.0.2.3) lib/abstract_controller/base.rb:214:in `process_action'
+actionpack (7.0.2.3) lib/action_controller/metal/rendering.rb:53:in `process_action'
+actionpack (7.0.2.3) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+activesupport (7.0.2.3) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+actiontext (7.0.2.3) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.2.3) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.2.3) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.2.3) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.2.3) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.2.3) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.2.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.2.3) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.2.3) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.2.3) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.2.3) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.2.3) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.2.3) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.2.3) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.2.3) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.2.3) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.2.3) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.2.3) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.2.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.2.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.2.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.2.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.2.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.2.3) lib/action_dispatch/routing/route_set.rb:850:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/cookies.rb:693:in `call'
+activerecord (7.0.2.3) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.3) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.2.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2022-05-03 11:57:29 +0530
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#main as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/main.html.erb within layouts/application
+  Rendered home/main.html.erb within layouts/application (Duration: 148.5ms | Allocations: 23405)
+  Rendered layouts/_navbar.html.erb (Duration: 5.3ms | Allocations: 866)
+  Rendered layouts/_messages.html.erb (Duration: 1.1ms | Allocations: 174)
+  Rendered layout layouts/application.html.erb (Duration: 406.2ms | Allocations: 41264)
+Completed 200 OK in 433ms (Views: 415.2ms | ActiveRecord: 0.0ms | Allocations: 44150)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2022-05-03 11:57:38 +0530
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 46.3ms | Allocations: 5234)
+  Rendered layouts/_navbar.html.erb (Duration: 7.2ms | Allocations: 704)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 36)
+  Rendered layout layouts/application.html.erb (Duration: 80.2ms | Allocations: 9622)
+Completed 200 OK in 123ms (Views: 83.9ms | ActiveRecord: 2.2ms | Allocations: 17513)
+
+
+Started GET "/articles" for 127.0.0.1 at 2022-05-03 11:58:11 +0530
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:16
+  Rendered articles/index.html.erb within layouts/application (Duration: 44.4ms | Allocations: 3805)
+  Rendered layouts/_navbar.html.erb (Duration: 6.6ms | Allocations: 704)
+  Rendered layouts/_messages.html.erb (Duration: 0.3ms | Allocations: 36)
+  Rendered layout layouts/application.html.erb (Duration: 83.0ms | Allocations: 8843)
+Completed 200 OK in 155ms (Views: 85.6ms | ActiveRecord: 2.9ms | Allocations: 10788)
+
+
+Started PATCH "/users/1" for 127.0.0.1 at 2022-05-03 12:00:43 +0530
+  
+AbstractController::ActionNotFound (The action 'update' could not be found for UsersController):
+  
+actionpack (7.0.2.3) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.2.3) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.2.3) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.2.3) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.2.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.2.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.2.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.2.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.2.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.2.3) lib/action_dispatch/routing/route_set.rb:850:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/cookies.rb:693:in `call'
+activerecord (7.0.2.3) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.3) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.2.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/users/1/edit" for 127.0.0.1 at 2022-05-03 12:00:43 +0530
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 16.9ms | Allocations: 2901)
+  Rendered layouts/_navbar.html.erb (Duration: 5.1ms | Allocations: 693)
+  Rendered layouts/_messages.html.erb (Duration: 0.2ms | Allocations: 33)
+  Rendered layout layouts/application.html.erb (Duration: 51.5ms | Allocations: 7236)
+Completed 200 OK in 59ms (Views: 53.1ms | ActiveRecord: 0.4ms | Allocations: 8106)
+
+
+Started PATCH "/users/1" for 127.0.0.1 at 2022-05-03 12:01:43 +0530
+Processing by UsersController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"aman_pandey", "email"=>"aman@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Update your account", "id"=>"1"}
+No template found for UsersController#update, rendering head :no_content
+Completed 204 No Content in 3ms (Allocations: 675)
+
+
+Started PATCH "/users/1" for 127.0.0.1 at 2022-05-03 12:01:44 +0530
+Processing by UsersController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"aman_pandey", "email"=>"aman@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Update your account", "id"=>"1"}
+No template found for UsersController#update, rendering head :no_content
+Completed 204 No Content in 5ms (Allocations: 376)
+
+
+Started PATCH "/users/1" for 127.0.0.1 at 2022-05-03 12:01:50 +0530
+Processing by UsersController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"aman_pandey", "email"=>"aman@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Update your account", "id"=>"1"}
+No template found for UsersController#update, rendering head :no_content
+Completed 204 No Content in 3ms (Allocations: 364)
+
+
+Started PATCH "/users/1" for 127.0.0.1 at 2022-05-03 12:01:52 +0530
+Processing by UsersController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"aman_pandey", "email"=>"aman@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Update your account", "id"=>"1"}
+No template found for UsersController#update, rendering head :no_content
+Completed 204 No Content in 6ms (Allocations: 370)
+
+
+Started PATCH "/users/1" for 127.0.0.1 at 2022-05-03 12:01:52 +0530
+Processing by UsersController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"aman_pandey", "email"=>"aman@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Update your account", "id"=>"1"}
+No template found for UsersController#update, rendering head :no_content
+Completed 204 No Content in 3ms (Allocations: 364)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2022-05-03 12:05:04 +0530
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:17:in `edit'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 17.6ms | Allocations: 3087)
+  Rendered layouts/_navbar.html.erb (Duration: 5.1ms | Allocations: 705)
+  Rendered layouts/_messages.html.erb (Duration: 0.3ms | Allocations: 36)
+  Rendered layout layouts/application.html.erb (Duration: 101.9ms | Allocations: 19546)
+Completed 200 OK in 132ms (Views: 105.9ms | ActiveRecord: 6.6ms | Allocations: 24665)
+
+
+Started PATCH "/users/1" for 127.0.0.1 at 2022-05-03 12:05:17 +0530
+Processing by UsersController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"aman346", "email"=>"aman@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Update your account", "id"=>"1"}
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms | Allocations: 3406)
+
+
+  
+NameError (undefined local variable or method `prams' for #<UsersController:0x00000000015900>
+
+        @user = User.find(prams[:id])
+                          ^^^^^
+Did you mean?  params
+               params=
+               @_params):
+  
+app/controllers/users_controller.rb:21:in `update'
+Started GET "/articles" for 127.0.0.1 at 2022-05-03 12:05:47 +0530
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/articles/index.html.erb:16
+  [1m[36mArticle Load (1.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:16
+  Rendered articles/index.html.erb within layouts/application (Duration: 16.4ms | Allocations: 3394)
+  Rendered layouts/_navbar.html.erb (Duration: 4.1ms | Allocations: 708)
+  Rendered layouts/_messages.html.erb (Duration: 0.2ms | Allocations: 36)
+  Rendered layout layouts/application.html.erb (Duration: 99.9ms | Allocations: 20561)
+Completed 200 OK in 110ms (Views: 102.2ms | ActiveRecord: 5.2ms | Allocations: 22358)
+
+
+Started GET "/articles" for 127.0.0.1 at 2022-05-03 12:05:47 +0530
+Started GET "/articles" for 127.0.0.1 at 2022-05-03 12:05:47 +0530
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+Processing by ArticlesController#index as HTML
+  ↳ app/views/articles/index.html.erb:16
+  Rendered articles/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1157)
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/articles/index.html.erb:16
+  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:16
+  Rendered articles/index.html.erb within layouts/application (Duration: 13.0ms | Allocations: 1649)
+  Rendered layouts/_navbar.html.erb (Duration: 6.0ms | Allocations: 1278)
+  Rendered layouts/_messages.html.erb (Duration: 0.3ms | Allocations: 37)
+  Rendered layouts/_navbar.html.erb (Duration: 10.7ms | Allocations: 1227)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered layout layouts/application.html.erb (Duration: 85.5ms | Allocations: 11880)
+Completed 200 OK in 98ms (Views: 88.3ms | ActiveRecord: 0.3ms | Allocations: 12483)
+
+
+  Rendered layout layouts/application.html.erb (Duration: 80.9ms | Allocations: 11125)
+Completed 200 OK in 94ms (Views: 83.6ms | ActiveRecord: 1.2ms | Allocations: 12226)
+
+
+Started GET "/articles/users/1/edit" for 127.0.0.1 at 2022-05-03 12:05:56 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/articles/users/1/edit"):
+  
+Started GET "/users/1/edit" for 127.0.0.1 at 2022-05-03 12:06:07 +0530
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 16.4ms | Allocations: 3074)
+  Rendered layouts/_navbar.html.erb (Duration: 12.6ms | Allocations: 704)
+  Rendered layouts/_messages.html.erb (Duration: 0.3ms | Allocations: 36)
+  Rendered layout layouts/application.html.erb (Duration: 77.9ms | Allocations: 7439)
+Completed 200 OK in 98ms (Views: 79.9ms | ActiveRecord: 3.8ms | Allocations: 11620)
+
+
+Started PATCH "/users/1" for 127.0.0.1 at 2022-05-03 12:06:19 +0530
+Processing by UsersController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"aman346", "email"=>"aman@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Update your account", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `update'
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.3ms | Allocations: 3923)
+
+
+  
+NameError (undefined local variable or method `user' for #<UsersController:0x0000000001a338>
+
+        if user.update(user_params)
+           ^^^^
+Did you mean?  @user):
+  
+app/controllers/users_controller.rb:22:in `update'
+Started GET "/users/1/edit" for 127.0.0.1 at 2022-05-03 12:07:08 +0530
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:17:in `edit'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 28.0ms | Allocations: 3094)
+  Rendered layouts/_navbar.html.erb (Duration: 6.6ms | Allocations: 709)
+  Rendered layouts/_messages.html.erb (Duration: 0.2ms | Allocations: 36)
+  Rendered layout layouts/application.html.erb (Duration: 155.8ms | Allocations: 19608)
+Completed 200 OK in 189ms (Views: 158.7ms | ActiveRecord: 4.1ms | Allocations: 24703)
+
+
+Started PATCH "/users/1" for 127.0.0.1 at 2022-05-03 12:07:18 +0530
+Processing by UsersController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"aman346", "email"=>"aman@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Update your account", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) AND "users"."id" != ? LIMIT ?[0m  [["username", "aman346"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) AND "users"."id" != ? LIMIT ?[0m  [["email", "aman@gmail.com"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[36mUser Update (3.5ms)[0m  [1m[33mUPDATE "users" SET "username" = ?, "updated_at" = ?, "password_digest" = ? WHERE "users"."id" = ?[0m  [["username", "aman346"], ["updated_at", "2022-05-03 06:37:18.884661"], ["password_digest", "[FILTERED]"], ["id", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[36mTRANSACTION (17.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+Redirected to http://127.0.0.1:3000/articles
+Completed 302 Found in 362ms (ActiveRecord: 22.4ms | Allocations: 5955)
+
+
+Started GET "/articles" for 127.0.0.1 at 2022-05-03 12:07:18 +0530
+Processing by ArticlesController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:16
+  Rendered articles/index.html.erb within layouts/application (Duration: 9.0ms | Allocations: 2656)
+  Rendered layouts/_navbar.html.erb (Duration: 4.0ms | Allocations: 704)
+  Rendered layouts/_messages.html.erb (Duration: 0.2ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 48.2ms | Allocations: 7745)
+Completed 200 OK in 58ms (Views: 49.5ms | ActiveRecord: 1.8ms | Allocations: 9318)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2022-05-03 12:07:35 +0530
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 17.6ms | Allocations: 2709)
+  Rendered layouts/_navbar.html.erb (Duration: 4.0ms | Allocations: 690)
+  Rendered layouts/_messages.html.erb (Duration: 0.2ms | Allocations: 27)
+  Rendered layout layouts/application.html.erb (Duration: 58.6ms | Allocations: 6995)
+Completed 200 OK in 67ms (Views: 61.5ms | ActiveRecord: 0.5ms | Allocations: 7791)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2022-05-03 14:14:55 +0530
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:17:in `edit'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 11.8ms | Allocations: 1575)
+  Rendered users/edit.html.erb within layouts/application (Duration: 39.4ms | Allocations: 3784)
+  Rendered layouts/_navbar.html.erb (Duration: 8.3ms | Allocations: 951)
+  Rendered layouts/_messages.html.erb (Duration: 0.8ms | Allocations: 154)
+  Rendered layout layouts/application.html.erb (Duration: 76.6ms | Allocations: 8857)
+Completed 200 OK in 100ms (Views: 84.9ms | ActiveRecord: 3.2ms | Allocations: 10725)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2022-05-03 14:14:56 +0530
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.0ms | Allocations: 999)
+  Rendered users/edit.html.erb within layouts/application (Duration: 18.9ms | Allocations: 2719)
+  Rendered layouts/_navbar.html.erb (Duration: 5.3ms | Allocations: 689)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered layout layouts/application.html.erb (Duration: 71.1ms | Allocations: 7000)
+Completed 200 OK in 81ms (Views: 73.5ms | ActiveRecord: 0.2ms | Allocations: 7826)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-05-03 14:15:27 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 4.5ms | Allocations: 1502)
+  Rendered users/new.html.erb within layouts/application (Duration: 21.1ms | Allocations: 3719)
+  Rendered layouts/_navbar.html.erb (Duration: 4.9ms | Allocations: 951)
+  Rendered layouts/_messages.html.erb (Duration: 1.0ms | Allocations: 154)
+  Rendered layout layouts/application.html.erb (Duration: 64.8ms | Allocations: 8801)
+Completed 200 OK in 71ms (Views: 67.8ms | ActiveRecord: 0.0ms | Allocations: 9651)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-05-03 14:17:33 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 5.8ms | Allocations: 1517)
+  Rendered users/new.html.erb within layouts/application (Duration: 27.7ms | Allocations: 3746)
+  Rendered layouts/_navbar.html.erb (Duration: 7.8ms | Allocations: 958)
+  Rendered layouts/_messages.html.erb (Duration: 1.2ms | Allocations: 154)
+  Rendered layout layouts/application.html.erb (Duration: 84.5ms | Allocations: 8864)
+Completed 200 OK in 94ms (Views: 90.8ms | ActiveRecord: 0.0ms | Allocations: 9713)
+
+
+Started GET "/signup" for 127.0.0.1 at 2022-05-03 14:18:00 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 8.2ms | Allocations: 1505)
+  Rendered users/new.html.erb within layouts/application (Duration: 26.8ms | Allocations: 3720)
+  Rendered layouts/_navbar.html.erb (Duration: 4.7ms | Allocations: 954)
+  Rendered layouts/_messages.html.erb (Duration: 1.3ms | Allocations: 154)
+  Rendered layout layouts/application.html.erb (Duration: 73.4ms | Allocations: 8801)
+Completed 200 OK in 80ms (Views: 76.5ms | ActiveRecord: 0.0ms | Allocations: 9649)
+
+
+Started GET "/user/1" for 127.0.0.1 at 2022-05-03 14:20:07 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/user/1"):
+  
+Started GET "/users/1" for 127.0.0.1 at 2022-05-03 14:20:16 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:31:in `show'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `show'
+Completed 406 Not Acceptable in 32ms (ActiveRecord: 4.9ms | Allocations: 4941)
+
+
+  
+ActionController::MissingExactTemplate (UsersController#show is missing a template for request formats: text/html):
+  
+actionpack (7.0.2.3) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (7.0.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (7.0.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (7.0.2.3) lib/abstract_controller/base.rb:214:in `process_action'
+actionpack (7.0.2.3) lib/action_controller/metal/rendering.rb:53:in `process_action'
+actionpack (7.0.2.3) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+activesupport (7.0.2.3) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+actiontext (7.0.2.3) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.2.3) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.2.3) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.2.3) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.2.3) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.2.3) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.2.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.2.3) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.2.3) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.2.3) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.2.3) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.2.3) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.2.3) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.2.3) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.2.3) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.2.3) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.2.3) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.2.3) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.2.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.2.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.2.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.2.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.2.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.2.3) lib/action_dispatch/routing/route_set.rb:850:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/cookies.rb:693:in `call'
+activerecord (7.0.2.3) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.3) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.2.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/users/1" for 127.0.0.1 at 2022-05-03 14:24:21 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 3.3ms | Allocations: 162)
+  Rendered layouts/_navbar.html.erb (Duration: 8.7ms | Allocations: 1008)
+  Rendered layouts/_messages.html.erb (Duration: 0.8ms | Allocations: 155)
+  Rendered layout layouts/application.html.erb (Duration: 129.1ms | Allocations: 18157)
+Completed 200 OK in 142ms (Views: 135.2ms | ActiveRecord: 0.4ms | Allocations: 19512)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2022-05-03 19:22:05 +0530
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 29.5ms | Allocations: 3488)
+  Rendered users/edit.html.erb within layouts/application (Duration: 166.3ms | Allocations: 28408)
+  Rendered layouts/_navbar.html.erb (Duration: 7.0ms | Allocations: 994)
+  Rendered layouts/_messages.html.erb (Duration: 0.7ms | Allocations: 174)
+  Rendered layout layouts/application.html.erb (Duration: 277.3ms | Allocations: 45869)
+Completed 200 OK in 336ms (Views: 290.0ms | ActiveRecord: 2.9ms | Allocations: 55866)
+
+
+Started PATCH "/users/1" for 127.0.0.1 at 2022-05-03 19:22:09 +0530
+Processing by UsersController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"aman346", "email"=>"aman@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Update account", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) AND "users"."id" != ? LIMIT ?[0m  [["username", "aman346"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) AND "users"."id" != ? LIMIT ?[0m  [["email", "aman@gmail.com"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+Redirected to http://127.0.0.1:3000/articles
+Completed 302 Found in 44ms (ActiveRecord: 1.3ms | Allocations: 5075)
+
+
+Started GET "/articles" for 127.0.0.1 at 2022-05-03 19:22:10 +0530
+Processing by ArticlesController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:16
+  Rendered articles/index.html.erb within layouts/application (Duration: 18.2ms | Allocations: 3796)
+  Rendered layouts/_navbar.html.erb (Duration: 4.5ms | Allocations: 704)
+  Rendered layouts/_messages.html.erb (Duration: 0.3ms | Allocations: 40)
+  Rendered layout layouts/application.html.erb (Duration: 62.1ms | Allocations: 8935)
+Completed 200 OK in 81ms (Views: 62.7ms | ActiveRecord: 2.5ms | Allocations: 10886)
+
+
+Started PATCH "/users/1" for 127.0.0.1 at 2022-05-03 19:22:20 +0530
+Processing by UsersController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"aman346", "email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Update account", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) AND "users"."id" != ? LIMIT ?[0m  [["username", "aman346"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) AND "users"."id" != ? LIMIT ?[0m  [["email", ""], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 4.6ms | Allocations: 1929)
+  Rendered users/new.html.erb within layouts/application (Duration: 26.6ms | Allocations: 4825)
+  Rendered layouts/_navbar.html.erb (Duration: 5.0ms | Allocations: 689)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 27)
+  Rendered layout layouts/application.html.erb (Duration: 70.6ms | Allocations: 9107)
+Completed 422 Unprocessable Entity in 104ms (Views: 77.8ms | ActiveRecord: 1.2ms | Allocations: 13405)
+
+
+Started PATCH "/users/1" for 127.0.0.1 at 2022-05-03 19:23:12 +0530
+Processing by UsersController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"aman346", "email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Update account", "id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:23:in `update'
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) AND "users"."id" != ? LIMIT ?[0m  [["username", "aman346"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `update'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) AND "users"."id" != ? LIMIT ?[0m  [["email", ""], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:23:in `update'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 7.6ms | Allocations: 2046)
+  Rendered users/new.html.erb within layouts/application (Duration: 20.7ms | Allocations: 4759)
+  Rendered layouts/_navbar.html.erb (Duration: 4.3ms | Allocations: 706)
+  Rendered layouts/_messages.html.erb (Duration: 0.2ms | Allocations: 36)
+  Rendered layout layouts/application.html.erb (Duration: 147.7ms | Allocations: 21238)
+Completed 422 Unprocessable Entity in 219ms (Views: 150.2ms | ActiveRecord: 4.6ms | Allocations: 29996)
+
+
+Started PATCH "/users/1" for 127.0.0.1 at 2022-05-03 19:23:22 +0530
+Processing by UsersController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"aman346", "email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Update account", "id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:23:in `update'
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) AND "users"."id" != ? LIMIT ?[0m  [["username", "aman346"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `update'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) AND "users"."id" != ? LIMIT ?[0m  [["email", ""], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:23:in `update'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 4.4ms | Allocations: 2046)
+  Rendered users/new.html.erb within layouts/application (Duration: 21.9ms | Allocations: 4749)
+  Rendered layouts/_navbar.html.erb (Duration: 5.5ms | Allocations: 705)
+  Rendered layouts/_messages.html.erb (Duration: 0.2ms | Allocations: 36)
+  Rendered layout layouts/application.html.erb (Duration: 102.8ms | Allocations: 21202)
+Completed 422 Unprocessable Entity in 148ms (Views: 105.1ms | ActiveRecord: 5.5ms | Allocations: 30041)
+
+
+Started PATCH "/users/1" for 127.0.0.1 at 2022-05-03 19:23:31 +0530
+Processing by UsersController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"", "email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Update account", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:23:in `update'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) AND "users"."id" != ? LIMIT ?[0m  [["username", ""], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `update'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) AND "users"."id" != ? LIMIT ?[0m  [["email", ""], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `update'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:23:in `update'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 11.6ms | Allocations: 2954)
+  Rendered users/new.html.erb within layouts/application (Duration: 33.7ms | Allocations: 6268)
+  Rendered layouts/_navbar.html.erb (Duration: 3.7ms | Allocations: 689)
+  Rendered layouts/_messages.html.erb (Duration: 0.2ms | Allocations: 27)
+  Rendered layout layouts/application.html.erb (Duration: 68.2ms | Allocations: 10551)
+Completed 422 Unprocessable Entity in 100ms (Views: 69.9ms | ActiveRecord: 1.8ms | Allocations: 14845)
+
+
+Started PATCH "/users/1" for 127.0.0.1 at 2022-05-03 19:23:56 +0530
+Processing by UsersController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"aman346", "email"=>"aman2001mi@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Update account", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:23:in `update'
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) AND "users"."id" != ? LIMIT ?[0m  [["username", "aman346"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `update'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) AND "users"."id" != ? LIMIT ?[0m  [["email", "aman2001mi@gmail.com"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `update'
+  [1m[36mUser Update (2.6ms)[0m  [1m[33mUPDATE "users" SET "email" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["email", "aman2001mi@gmail.com"], ["updated_at", "2022-05-03 13:53:57.027557"], ["id", 1]]
+  ↳ app/controllers/users_controller.rb:23:in `update'
+  [1m[36mTRANSACTION (15.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:23:in `update'
+Redirected to http://127.0.0.1:3000/articles
+Completed 302 Found in 49ms (ActiveRecord: 19.0ms | Allocations: 4856)
+
+
+Started GET "/articles" for 127.0.0.1 at 2022-05-03 19:23:57 +0530
+Processing by ArticlesController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:16
+  Rendered articles/index.html.erb within layouts/application (Duration: 18.9ms | Allocations: 2637)
+  Rendered layouts/_navbar.html.erb (Duration: 7.8ms | Allocations: 704)
+  Rendered layouts/_messages.html.erb (Duration: 0.2ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 73.0ms | Allocations: 7703)
+Completed 200 OK in 79ms (Views: 72.2ms | ActiveRecord: 2.7ms | Allocations: 9277)
+
+
+Started GET "/users/1/" for 127.0.0.1 at 2022-05-03 19:24:16 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:32:in `show'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:32:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 166)
+  Rendered layouts/_navbar.html.erb (Duration: 3.9ms | Allocations: 752)
+  Rendered layouts/_messages.html.erb (Duration: 0.2ms | Allocations: 36)
+  Rendered layout layouts/application.html.erb (Duration: 94.5ms | Allocations: 17367)
+Completed 200 OK in 123ms (Views: 99.3ms | ActiveRecord: 4.6ms | Allocations: 22487)
+
+
